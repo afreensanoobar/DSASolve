@@ -7,4 +7,11 @@ public class Max {
     }
     static int maxRange(int[] arr , int start , int end){
         int maxVal= arr[0];
-        f
+        for (int i=1;i<arr.length;i++ ){
+            if(arr[i]>maxVal){
+                maxVal=arr[i];
+            }
+        }
+        return maxVal;
+    }
+}
